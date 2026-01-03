@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rest Easy Cleaning Co.</title>
+  <meta name="description" content="Professional residential cleaning: standard, deep, move-in/move-out, and add-ons. Serving South Jersey with reliable, detailed service." />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Rest Easy Cleaning Co. Home">
+        <img src="assets/logo_transparent.png" alt="Rest Easy Cleaning Co. logo" class="logo" />
+      </a>
+
+      <div class="header-text">
+        <h1>REST EASY CLEANING CO.</h1>
+        <p class="tagline">Because life’s already full enough — we handle the mess, you enjoy the rest.</p>
+      </div>
+
+      <div class="header-actions">
+        <a class="btn ghost" href="tel:+12406050102">Call 240-605-0102</a>
+        <a class="btn primary" href="#booking">Request a Quote</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-label="Hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-inner">
+        <div class="hero-card">
+          <p class="kicker">South Jersey • Reliable • Detailed</p>
+          <h2>Walk into a home that feels fresh, calm, and truly clean.</h2>
+          <p class="hero-sub">
+            Standard, deep, move-in/move-out, and custom add-ons. Tell us what you need — we’ll take it from there.
+          </p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#booking">Request a Quote</a>
+            <a class="btn" href="#services">See Services</a>
+          </div>
+          <p class="tiny">Prefer texting? Tap to call: <a href="tel:+12406050102">240-605-0102</a></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="subtext">Straightforward options. Flexible add-ons. Consistent results.</p>
+
+        <div class="cards">
+          <div class="card">
+            <h3>Standard Cleaning</h3>
+            <p>Great for maintenance: kitchens, bathrooms, dusting, floors, and tidy-up.</p>
+          </div>
+          <div class="card">
+            <h3>Deep Cleaning</h3>
+            <p>Extra detail for a reset: baseboards, buildup areas, and hard-to-reach spots.</p>
+          </div>
+          <div class="card">
+            <h3>Move In / Move Out</h3>
+            <p>Perfect for transitions: empty-home cleaning and touchups that matter.</p>
+          </div>
+          <div class="card">
+            <h3>Add-ons</h3>
+            <p>Inside fridge/oven, cabinets, windows, laundry, and more — just ask.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="booking" class="section alt">
+      <div class="container">
+        <h2>Request a Quote</h2>
+        <p class="subtext">Send us your info and we’ll confirm availability ASAP.</p>
+
+        <form id="bookingForm" class="form" action="https://formsubmit.co/resteasycleaningconj@gmail.com" method="POST">
+          <input type="hidden" name="_subject" value="REST EASY CLEANING CO. — Quote Request" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_next" value="https://resteasyco.github.io/thanks.html" />
+
+          <div class="grid">
+            <label>
+              Name
+              <input type="text" id="name" name="name" autocomplete="name" required />
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" id="phone" name="phone" autocomplete="tel" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" id="email" name="email" autocomplete="email" required />
+            </label>
+
+            <label>
+              Preferred Date
+              <input type="date" id="date" name="preferred_date" required />
+            </label>
+          </div>
+
+          <label class="full">
+            Address (optional)
+            <input type="text" id="address" name="address" autocomplete="street-address" />
+          </label>
+
+          <label class="full">
+            Details / Requests
+            <textarea id="details" name="details" rows="4" placeholder="Example: Deep cleaning, 2 bed / 2 bath, pets, add-on: inside fridge."></textarea>
+          </label>
+
+          <div class="actions">
+            <button type="submit" class="btn primary">Send Request</button>
+            <span id="confirmation" class="confirmation" aria-live="polite"></span>
+          </div>
+
+          <p class="tiny">
+            First time only: you may receive a confirmation email to activate deliveries — approve it once and you’re set.
+          </p>
+          <p class="tiny">Prefer texting or calling? <a href="tel:+12406050102">240-605-0102</a></p>
+        </form>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>Gallery</h2>
+        <p class="subtext">Real cleanings — real results.</p>
+
+        <div class="gallery">
+          <figure class="shot">
+            <img src="images/IMG_5400.jpg" alt="Cleaning example 1" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="images/IMG_5417.jpg" alt="Cleaning example 2" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="images/IMG_5418.jpg" alt="Cleaning example 3" loading="lazy" />
+          </figure>
+          <figure class="shot">
+            <img src="images/IMG_5402.jpg" alt="Cleaning example 4" loading="lazy" />
+          </figure>
+        </div>
+
+        <div class="gallery-more">
+          <a class="btn" href="#booking">Get a Quote</a>
+          <a class="btn ghost" href="tel:+12406050102">Call / Text</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="container contact">
+        <div>
+          <h2>Save Our Contact</h2>
+          <p class="subtext">Scan to add <strong>REST EASY CLEANING CO.</strong> to your contacts.</p>
+          <p class="contact-line">📞 <a href="tel:+12406050102">240-605-0102</a></p>
+          <p class="contact-line">✉️ <a href="mailto:resteasycleaningconj@gmail.com">resteasycleaningconj@gmail.com</a></p>
+          <p class="tiny">Or download the contact card: <a href="qr_codes/rest-easy-contact.vcf" download>rest-easy-contact.vcf</a></p>
+        </div>
+
+        <div class="qr-wrap" aria-label="QR code to add contact">
+          <img src="qr_codes/qr_contact.png" alt="Scan to save contact" class="qr" />
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© REST EASY CLEANING CO. — Serving South Jersey</p>
+      <p><a href="#booking">Request a Quote</a> • <a href="tel:+12406050102">240-605-0102</a></p>
+    </div>
+  </footer>
+</body>
+</html>
